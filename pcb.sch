@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATmega:ATmega32U4-AU U1
-U 1 1 5E4B48A7
-P 5150 3300
-F 0 "U1" H 5150 1411 50  0000 C CNN
-F 1 "ATmega32U4-AU" H 5150 1320 50  0000 C CNN
-F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 5150 3300 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 5150 3300 50  0001 C CNN
-	1    5150 3300
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR02
 U 1 1 5E4B5E51
 P 5050 1350
@@ -81,8 +70,6 @@ F 3 "" H 6550 3900 50  0001 C CNN
 	1    6550 3900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5750 3900 6100 3900
 Wire Wire Line
 	6300 3900 6550 3900
 $Comp
@@ -443,4 +430,143 @@ F 3 "" H 7250 2050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7250 2050 7150 2050
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX1
+U 1 1 5E565D2D
+P 7950 3450
+F 0 "MX1" H 7983 3673 60  0000 C CNN
+F 1 "MX-1U" H 7983 3599 20  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U" H 7325 3425 60  0001 C CNN
+F 3 "" H 7325 3425 60  0001 C CNN
+	1    7950 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 3600 7800 3600
+$Comp
+L Device:D_Small D1
+U 1 1 5E5667F0
+P 7800 3700
+F 0 "D1" H 7846 3791 50  0000 R BNN
+F 1 "SOD-123" H 7873 3791 50  0000 L BNN
+F 2 "Diode_SMD:D_SOD-123" V 7800 3700 50  0001 C CNN
+F 3 "~" V 7800 3700 50  0001 C CNN
+	1    7800 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX2
+U 1 1 5E56DDF8
+P 8700 3450
+F 0 "MX2" H 8733 3673 60  0000 C CNN
+F 1 "MX-1U" H 8733 3599 20  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U" H 8075 3425 60  0001 C CNN
+F 3 "" H 8075 3425 60  0001 C CNN
+	1    8700 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 3600 8550 3600
+$Comp
+L Device:D_Small D2
+U 1 1 5E56DDFF
+P 8550 3700
+F 0 "D2" H 8596 3791 50  0000 R BNN
+F 1 "SOD-123" H 8623 3791 50  0000 L BNN
+F 2 "Diode_SMD:D_SOD-123" V 8550 3700 50  0001 C CNN
+F 3 "~" V 8550 3700 50  0001 C CNN
+	1    8550 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX3
+U 1 1 5E56F275
+P 7950 4200
+F 0 "MX3" H 7983 4423 60  0000 C CNN
+F 1 "MX-1U" H 7983 4349 20  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U" H 7325 4175 60  0001 C CNN
+F 3 "" H 7325 4175 60  0001 C CNN
+	1    7950 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 4350 7800 4350
+$Comp
+L Device:D_Small D3
+U 1 1 5E56F27C
+P 7800 4450
+F 0 "D3" H 7846 4541 50  0000 R BNN
+F 1 "SOD-123" H 7873 4541 50  0000 L BNN
+F 2 "Diode_SMD:D_SOD-123" V 7800 4450 50  0001 C CNN
+F 3 "~" V 7800 4450 50  0001 C CNN
+	1    7800 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX4
+U 1 1 5E5716AE
+P 8700 4200
+F 0 "MX4" H 8733 4423 60  0000 C CNN
+F 1 "MX-1U" H 8733 4349 20  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U" H 8075 4175 60  0001 C CNN
+F 3 "" H 8075 4175 60  0001 C CNN
+	1    8700 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 4350 8550 4350
+$Comp
+L Device:D_Small D4
+U 1 1 5E5716B5
+P 8550 4450
+F 0 "D4" H 8596 4541 50  0000 R BNN
+F 1 "SOD-123" H 8623 4541 50  0000 L BNN
+F 2 "Diode_SMD:D_SOD-123" V 8550 4450 50  0001 C CNN
+F 3 "~" V 8550 4450 50  0001 C CNN
+	1    8550 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8100 3100 8100 3400
+Connection ~ 8100 3400
+Wire Wire Line
+	8100 3400 8100 4150
+Wire Wire Line
+	8850 3100 8850 3400
+Connection ~ 8850 3400
+Wire Wire Line
+	8850 3400 8850 4150
+Wire Wire Line
+	8550 3800 7800 3800
+Connection ~ 7800 3800
+Wire Wire Line
+	7800 3800 7500 3800
+Wire Wire Line
+	8550 4550 7800 4550
+Connection ~ 7800 4550
+Wire Wire Line
+	7800 4550 7500 4550
+Text GLabel 7500 4550 0    50   Input ~ 0
+ROW1
+Text GLabel 7500 3800 0    50   Input ~ 0
+ROW0
+Text GLabel 8100 3100 1    50   Input ~ 0
+COL0
+Text GLabel 8850 3100 1    50   Input ~ 0
+COL1
+Text GLabel 5950 2300 0    50   Output ~ 0
+COL0
+Wire Wire Line
+	5750 3900 6100 3900
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-AU U1
+U 1 1 5E4B48A7
+P 5150 3300
+F 0 "U1" H 5150 1411 50  0000 C CNN
+F 1 "ATmega32U4-AU" H 5150 1320 50  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 5150 3300 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 5150 3300 50  0001 C CNN
+	1    5150 3300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
